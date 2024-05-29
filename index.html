@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="sb.css">
     <style>
         .nav-item h5 {
-          margin: 0; /* Remove an margin from */
+          margin: 0; /* Remove margin  */
         }
         .navbar-nav{
             text-align:center;
@@ -50,7 +50,7 @@
         <nav class="navbar navbar-expand-lg  #ffc09f ">
         <div class="container">
             <div class="logo">
-                <img src="https://www.y-axis.com/assets/cms/2022-12/logo.jpg?VersionId=2Jwm6b8PYU8I.5TEP.frBE.OKAYg9mXy" alt="logo">
+                <img src="image/logo.jpg" alt="logo">
               </div>    
             <div class=" ms-auto">
                 <div class="btn-group" role="group" aria-label="Basic outlined example">
@@ -65,7 +65,7 @@
                     <button type="button" class="btn btn-outline-primary">Signup</button>
                     <button type="button" class="btn btn-outline-primary">Login</button>
                     <button type="button" class="btn btn-outline-primary">Contact Us</button>
-                    <button type="button" class="nav-item"> <i class="bi bi-search"></i>
+                    <button type="button" class="nav-item" data-bs-toggle="dropdown"> <i class="bi bi-search"></i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                       </svg>
@@ -87,46 +87,50 @@
             </a>
         </div> 
     </section>-->
-        <div class="container ">
+       <div class="container country flex-auto">
         <div class="jobs-salaries text-center #FF4500 ">
             <div class="container #FF4500">  
                 <section id="Jobs and Salaries text-center" class="mb-4">
                     <h4 class="mb-3">Jobs and Salaries</h4>
                     <h6 class="mb-2">Search Overseas Carier Options</h6>
                 
-                <div class="row job-links mb-2 mx-auto">
-                    <div class="col-md-2 offset-md-2 mx-auto">
-                        <button type="button" class="btn btn-light"><a href="#">
+                <div class="row job-links mb-2 mx-auto margin-0">
+                    <div class="col-md-2 offset-md-2 mx-auto justify-content-centre  dropdown-toggle-hidden" role="group" aria-label="Basic outlined example">
+                        <button type="button nav-item" class="btn btn-light nav-item active " data-country="Canada"><a href="#">
                             <img src="https://www.countryflags.com/wp-content/uploads/canada-flag-png-large.png" alt="Canada" class="flag-icon">
                             <p>Canada</p>
                         </a>
                     </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">It & Software</a></li>
+                        <li><a class="dropdown-item" href="#">Engineer</a></li>
+                      </ul>
 
                     </div>
-                    <div class="col-md-2 mx-auto">
-                        <button type="button" class="btn btn-light"><a href="#USA">
-                            <img src="https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png" alt="USA">
+                    <div class="col-md-2 mx-auto  justify-content-centre dropdown-toggle-hidden">
+                        <button type="button nav-item" class="btn btn-light nav-item "  data-country="USA"><a href="#USA">
+                            <img src="https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png" alt="USA" class="flag-icon">
                             <p>USA</p>
                         </a>
                         </button>
                     </div>
-                    <div class="col-md-2 mx-auto">
-                        <button type="button" class="btn btn-light"><a href="#Australia">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/640px-Flag_of_Australia_%28converted%29.svg.png" alt="Australia">
+                    <div class="col-md-2 mx-auto justify-content-centre  dropdown-toggle-hidden">
+                        <button type="button nav-item" class="btn btn-light nav-item" data-country="Australia"><a href="#Australia">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Flag_of_Australia_%28converted%29.svg/640px-Flag_of_Australia_%28converted%29.svg.png" alt="Australia" class="flag-icon">
                             <p>Australia</p>
                         </a>
                         </button>
                     </div>
-                    <div class="col-md-2 mx-auto">
-                        <button type="button" class="btn btn-light"><a href="#Germany">
-                            <img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png" alt="Germany">
+                    <div class="col-md-2 mx-auto justify-content-centre dropdown-toggle-hidden">
+                        <button type="button nav-item" class="btn btn-light nav-item"  data-country="Germany"><a href="#Germany">
+                            <img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-large.png" alt="Germany"class="flag-icon">
                             <p>Germany</p>
                         </a>
                         </button>
                     </div>
-                    <div class="col-md-2 mx-auto">
-                         <button type="button" class="btn btn-light"><a href="#UK">
-                            <img src="https://www.countryflags.com/wp-content/uploads/united-kingdom-flag-png-large.png" alt="UK">
+                    <div class="col-md-2 mx-autobtn-group dropdown-toggle-hidden ">
+                         <button type="button nav-item" class="btn btn-light nav-item "  data-country="UK"><a href="#UK">
+                            <img src="https://www.countryflags.com/wp-content/uploads/united-kingdom-flag-png-large.png" alt="UK"class="flag-icon">
                             <p>UK</p>
                         </a>
                     </button>
@@ -150,51 +154,49 @@
             <nav class="col-md-3 sidebar">
                 <ul class="nav flex-column #ffc09f">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#it-software" ><b>IT & Software and Developments</a></b>
+                        <a class="nav-link active sidebar-button " data-bs-toggle="collapse" data-category="IT & Software and Developments" href="#It-Software" ><b>IT & Software and Developments</a></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#engineer " ><b>Engineer</a></b>
+                        <a class="nav-link sidebar-button" data-category="Engineer" href="#Engineer "><b>Engineer</a></b> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#finance-accounting"><b>Finance & Accounting</a></b>
+                        <a class="nav-link sidebar-button" data-category="Finance-Accounting" href="#Finance-Accounting"><b>Finance & Accounting</a></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#hr"><b>HR</a></b>
+                        <a class="nav-link sidebar-button" data-category="IT & Software and Developments" href="#HR"><b>HR</a></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#hospitality"><b>Hospitality</a></b>
+                        <a class="nav-link sidebar-button"data-category="HR" href="#Hospitality"><b>Hospitality</a></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#sales-marketing"><b>Sales & Marketing</a></b>
+                        <a class="nav-link sidebar-button" data-category="Sales-Marketing" href="#Sales-Marketing"><b>Sales & Marketing</a></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#healthcare"><b>Healthcare</a></b>
+                        <a class="nav-link sidebar-button" data-category="Healthcare" href="#Healthcare"><b>Healthcare</a></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#teaching"><b>Teaching</a></b>
+                        <a class="nav-link sidebar-button" data-category="Teaching" href="#Teaching"><b>Teaching</a></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#nursing"><b>Nursing</a></b>
+                        <a class="nav-link sidebar-button" data-category="Nursing" href="#Nursing"><b>Nursing</a></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#arts"><b>Arts</a></b>
+                        <a class="nav-link sidebar-button" data-category="Arts"href="#Arts"><b>Arts</a></b>
                     </li>
                 </ul>
             </nav>
     
-            <main class="col-md-8 mx-auto flex-column ">
-
+            <main class="col-md-8 mx-auto flex-column hidden-section">
                 <section id="it-software" class="mb-4">
                     <h4 class="mb-2">IT & Software and Developments</h4>
                     <section class="based-salarie " class="mb-2 mx-auto">
                     <p>based on 9 salaries <strong class="right-text ms-auto">$1,16,438</strong>
                     </p>
                 </section>
-
-                <section id="engineer">
+                <section id="Engineer">
                             <div class="row">
                         <div class="col-md-4">
-                            <div class="job-box">
+                            <div class="job-box " >
                                 <h5>Back-end Developer</h5>
                                 <p><b>$139,850</b></p>
                                 <div class="salary-info">
@@ -211,7 +213,7 @@
                         </div>
                         
                         <div class="col-md-4">
-                            <div class="job-box" id="finance-accounting">
+                            <div class="job-box">
                                 <h5>Database Administrator</h5>
                                 <p><b>$99,783</b></p>
                                 <div class="salary-info">
@@ -275,7 +277,7 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="job-box" id="engineer">
+                            <div class="job-box" id="engineer" >
                                 <h5>Data Analyst</h5>
                                 <p><b>$91,173</b></p>
                                 <div class="salary-info">
@@ -343,7 +345,7 @@
                 </section>
                 </section>
     
-                <!-- Repeat similar sections for -->
+                <!-- Repeat similar sections if required -->
     
             </main>
         </div>
@@ -351,9 +353,12 @@
         </div>
     </div>
 </div>
-          
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="data.json"></script> <!-- i dont know why but after including jason the main section repeats-->
-    <script> scr= "script.js"</script>
+     <!-- i dont know why but after including jason the main section repeats-->
+     <script> scr="new.json"</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
